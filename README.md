@@ -3,6 +3,8 @@
 # Argo float of the day !
 ![Twitter Follow](https://img.shields.io/twitter/follow/argobot84)
 
+[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/euroargodev/floatoftheday/main?filepath=floatoftheday.ipynb)
+
 Every day, this repo will select an Argo float that reported data on the day and will publish on Twitter a figure of the data.
 
 Checkout the Twitter feed at: https://twitter.com/argobot84
