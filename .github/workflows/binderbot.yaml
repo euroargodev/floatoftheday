@@ -20,6 +20,6 @@ jobs:
           TWITTER_SECRET: ${{ secrets.TWITTER_SECRET }}
         run: >
           python -m binderbot.cli --binder-url https://binder.pangeo.io/
-          --repo euroargodev/floatoftheday --ref main
+          --repo euroargodev/floatoftheday --ref binder
           --pass-env-var TWITTER_SECRET
           floatoftheday.ipynb
