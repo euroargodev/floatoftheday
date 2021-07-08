@@ -11,8 +11,8 @@ Checkout the Twitter feed at: https://twitter.com/argobot84
 
 ### Data processing
 
-- Select a random Argo profile reported over the last 24 hours from [the weekly index profile file](ftp://ftp.ifremer.fr/ifremer/argo/ar_index_this_week_prof.txt)
-- Fetch profile data from the [IFREMER GDAC ftp](ftp://ftp.ifremer.fr/argo)
+- Select a random Argo profile reported over the last 24 hours from [the weekly index profile file](ftp.ifremer.fr/ifremer/argo/ar_index_this_week_prof.txt)
+- Fetch profile data from the [IFREMER GDAC ftp](ftp.ifremer.fr/argo)
 - Load data with [argopy](https://argopy.readthedocs.io)
 - Create and save plots with profile data
 - Tweet meta data and images of plots on twitter at: https://twitter.com/argobot84
