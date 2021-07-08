@@ -1,0 +1,29 @@
+name: Argo Bot
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    name: Argo Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install conda environment
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: argobot
+          environment-file: environment.yml
+          python-version: 3.8
+
+      - name: Execute Notebook
+        env:
+          TWITTER_SECRET: ${{ secrets.TWITTER_SECRET }}
+        shell: bash
+        run: |
+          conda init bash
+          source /home/runner/.bashrc
+          conda activate argobot
+          papermill floatoftheday.ipynb output.ipynb
