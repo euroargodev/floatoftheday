@@ -11,23 +11,24 @@ Checkout the Twitter feed at: https://twitter.com/argobot84
 
 ### Data processing
 
-- Select a random Argo profile reported over the last 24 hours from [the weekly index profile file](ftp.ifremer.fr/ifremer/argo/ar_index_this_week_prof.txt)
-- Fetch profile data from the [IFREMER GDAC ftp](ftp.ifremer.fr/argo)
-- Load data with [argopy](https://argopy.readthedocs.io)
+- Select a random Argo profile reported over the last 24 hours from [the weekly index profile file](//ftp.ifremer.fr/ifremer/argo/ar_index_this_week_prof.txt)
+- Fetch profile data from the [IFREMER GDAC ftp](//ftp.ifremer.fr/argo)
+- Load data with [argopy](//argopy.readthedocs.io)
 - Create and save plots with profile data
 - Tweet meta data and images of plots on twitter at: https://twitter.com/argobot84
 
 ### Software Used
 
-This bot is a Jupyter notebook. It uses open source Scientific Python packages, including
-- [Argopy](https://argopy.readthedocs.io): the Argo floats data model and fetcher
-- [Xarray](http://xarray.pydata.org/): the central data model and computational library
+This bot is a Jupyter notebook. It uses open source Scientific Python packages, including:
+- [Argopy](https://argopy.readthedocs.io): the Argo floats data model and data fetcher
+- [Xarray](http://xarray.pydata.org/): the underlying data model and computational library
 - [Matplotlib](https://matplotlib.org/) and [Cartopy](http://scitools.org.uk/cartopy/index.html) for plotting
+- [Seaborn](https://seaborn.pydata.org/) and [Proplot](https://proplot.readthedocs.io/) to make beautiful plots
 
 
 ### Automation
 
-The bot is automated using github workflows and [papermill](https://papermill.readthedocs.io/).
+The bot is automated using [Github workflows](//docs.github.com/en/actions/learn-github-actions), [papermill](//papermill.readthedocs.io/) and [Python-twitter](//python-twitter.readthedocs.io/).
 
 ***
 This repository was inspired by: https://github.com/rabernat/poseidon-bot
