@@ -5,28 +5,32 @@
 
 [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/euroargodev/floatoftheday/main?filepath=floatoftheday.ipynb)
 
-Every day, this repo will select an Argo float that reported data on the day and will publish on Twitter a figure of the data.
+Every day, this repo will select an Argo float that reported data over the last 24 hours and will publish on Twitter images of the data collected.
 
 Checkout the Twitter feed at: https://twitter.com/argobot84
 
-### Data
+### Data processing
 
-[...]
+- Select a random Argo profile reported over the last 24 hours from [the weekly index profile file](ftp://ftp.ifremer.fr/ifremer/argo/ar_index_this_week_prof.txt)
+- Fetch profile data from the [IFREMER GDAC ftp](ftp://ftp.ifremer.fr/argo)
+- Load data with [argopy](https://argopy.readthedocs.io)
+- Create and save plots with profile data
+- Tweet meta data and images of plots on twitter at: https://twitter.com/argobot84
 
 ### Software Used
 
 This bot is a Jupyter notebook. It uses open source Scientific Python packages, including
-- [Argopy](https://argopy.readthedocs.io): the Argo floats data provider
+- [Argopy](https://argopy.readthedocs.io): the Argo floats data model and fetcher
 - [Xarray](http://xarray.pydata.org/): the central data model and computational library
 - [Matplotlib](https://matplotlib.org/) and [Cartopy](http://scitools.org.uk/cartopy/index.html) for plotting
 
 
 ### Automation
 
-The bot is automated using github workflows and [binderbot](https://github.com/pangeo-gallery/binderbot/).
+The bot is automated using github workflows and [papermill](https://papermill.readthedocs.io/).
 
 ***
-This repository is based on excellent https://github.com/rabernat/poseidon-bot
+This repository was inspired by: https://github.com/rabernat/poseidon-bot
  
 This repository is maintained by:
 <div>
