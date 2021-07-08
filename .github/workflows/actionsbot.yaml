@@ -18,7 +18,7 @@ jobs:
           environment-file: environment.yml
           python-version: 3.8
 
-      - name: Execute Notebook
+      - name: Execute Notebook and send Tweet
         env:
           TWITTER_SECRET: ${{ secrets.TWITTER_SECRET }}
         shell: bash
