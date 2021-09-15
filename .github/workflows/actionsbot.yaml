@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Argo Build
+    name: Tweet Argo Figures
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
