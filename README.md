@@ -3,8 +3,6 @@
 # Argo float of the day !
 ![Twitter Follow](https://img.shields.io/twitter/follow/argobot84)
 
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/euroargodev/floatoftheday/main?filepath=floatoftheday.ipynb)
-
 Every day, this repo will select an Argo float that reported data over the last 24 hours and will publish on Twitter images of the data collected.
 
 Checkout the Twitter feed at: https://twitter.com/argobot84
@@ -35,6 +33,6 @@ This repository was inspired by: https://github.com/rabernat/poseidon-bot
  
 This repository is maintained by:
 <div>
-<img src="https://www.argo-france.fr/wp-content/uploads/2019/10/Argo-logo_banner-color.png" width="200"/>
 <img src="https://www.umr-lops.fr/var/storage/images/_aliases/logo_main/medias-ifremer/medias-lops/logos/logo-lops-2/1459683-4-fre-FR/Logo-LOPS-2.png" width="70"/>
+<img src="https://raw.githubusercontent.com/euroargodev/euroargodev.github.io/master/img/logo/ArgoFrance-logo_banner-color.png" width="200"/>
 </div>
