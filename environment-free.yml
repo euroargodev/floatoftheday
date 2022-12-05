@@ -24,4 +24,4 @@ dependencies:
   - nbformat
   - pip:
       - python-twitter
-      - pip install git+https://github.com/euroargodev/argopy
+      - git+https://github.com/euroargodev/argopy
