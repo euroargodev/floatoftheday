@@ -1,18 +1,15 @@
-<img src="https://raw.githubusercontent.com/euroargodev/euroargodev.github.io/master/img/logo/ArgoLogos/Argo_Logo_S.gif" width="100"/>
+|<img src="https://raw.githubusercontent.com/euroargodev/euroargodev.github.io/master/img/logo/ArgoLogos/Argo_Logo_S.gif" width="100"/>| <h1> Argo float of the day ! <br> ![Twitter Follow](https://img.shields.io/twitter/follow/argobot84)|
+|:-----:|:-----:|
 
-# Argo float of the day !
-![Twitter Follow](https://img.shields.io/twitter/follow/argobot84)
-
-Every day, this repo will select an Argo float that reported data over the last 24 hours and will publish on Twitter images of the data collected.
+Every day, this repo will select an Argo float that reported data over the last 24 hours and will publish its data on Twitter.
 
 Checkout the Twitter feed at: https://twitter.com/argobot84
 
 ### Data processing
 
-- Select a random Argo profile reported over the last 24 hours from [the weekly index profile file](//ftp.ifremer.fr/ifremer/argo/ar_index_this_week_prof.txt)
+- Select a random Argo profile reported over the last 24 hours from [the global index profile file](https://data-argo.ifremer.fr/ar_index_global_prof.txt.gz)
 - Fetch profile data from the [IFREMER GDAC ftp](//ftp.ifremer.fr/argo)
-- Load data with [argopy](//argopy.readthedocs.io)
-- Create and save plots with profile data
+- Create and save plots with profile measurements data
 - Tweet meta data and images of plots on twitter at: https://twitter.com/argobot84
 
 ### Software Used
