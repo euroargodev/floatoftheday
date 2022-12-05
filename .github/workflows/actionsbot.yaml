@@ -26,4 +26,6 @@ jobs:
         env:
           TWITTER_SECRET: ${{ secrets.TWITTER_SECRET }}
         run: |
+          python -m ipykernel install --user --name=argobot
+          jupyter kernelspec list
           papermill floatoftheday.ipynb output.ipynb
