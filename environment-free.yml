@@ -18,10 +18,10 @@ dependencies:
   - cartopy_offlinedata
   - ipywidgets
   - cmocean
-  - argopy
   - proplot
   - papermill
   - nbconvert
   - nbformat
   - pip:
       - python-twitter
+      - pip install git+https://github.com/euroargodev/argopy

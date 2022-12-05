@@ -20,6 +20,7 @@ jobs:
         with:
           environment-file: environment-free.yml
           environment-name: argobot
+          cache-env: true
 
       - name: Execute Notebook and send Tweet
         env:
