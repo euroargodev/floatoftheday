@@ -8,9 +8,9 @@ jobs:
   build:
     name: Tweet Argo Figures
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash -l {0}
+#    defaults:
+#      run:
+#        shell: bash -l {0}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -24,9 +24,7 @@ jobs:
       - name: Execute Notebook and send Tweet
         env:
           TWITTER_SECRET: ${{ secrets.TWITTER_SECRET }}
-        shell: bash
+        shell: bash -l {0}
         run: |
-          conda init bash
-          source /home/runner/.bashrc
-          conda activate argobot
+#          conda activate argobot
           papermill floatoftheday.ipynb output.ipynb
