@@ -1,0 +1,27 @@
+name: argobot
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy
+  - xarray
+  - aiohttp
+  - matplotlib
+  - netcdf4
+  - seaborn
+  - erddapy
+  - fsspec
+  - gsw
+  - pip
+  - tqdm
+  - cartopy
+  - cartopy_offlinedata
+  - ipywidgets
+  - cmocean
+  - argopy
+  - proplot
+  - papermill
+  - nbconvert
+  - nbformat
+  - pip:
+      - python-twitter
