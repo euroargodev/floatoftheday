@@ -130,3 +130,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+MAP.png
+output.ipynb
+PSAL.png
+TEMP.png
+TS.png
+
