@@ -18,7 +18,7 @@ jobs:
       - name: Install Conda environment
         uses: mamba-org/provision-with-micromamba@main
         with:
-          environment-file: environment-free.yaml
+          environment-file: environment-free.yml
           environment-name: argobot
 
       - name: Execute Notebook and send Tweet
