@@ -16,6 +16,7 @@ dependencies:
   - tqdm
   - cartopy
   - cartopy_offlinedata
+  - ipykernel
   - ipywidgets
   - cmocean
   - proplot
