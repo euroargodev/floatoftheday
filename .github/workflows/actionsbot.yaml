@@ -13,14 +13,28 @@ jobs:
         shell: bash -l {0}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Install Conda environment
-        uses: mamba-org/provision-with-micromamba@main
+#      - name: Install Conda environment
+#        uses: mamba-org/provision-with-micromamba@main
+#        with:
+#          environment-file: environment-free.yml
+#          environment-name: argobot
+#          cache-env: true
+
+      - name: Set environment variables
+        run: |
+          echo "CONDA_ENV_FILE=environment-free.yml" >> $GITHUB_ENV
+#          echo "PYTHON_VERSION=3.8" >> $GITHUB_ENV
+
+      - name: Setup Micromamba 3.8
+        uses: mamba-org/setup-micromamba@v1
         with:
-          environment-file: environment-free.yml
           environment-name: argobot
-          cache-env: true
+          environment-file: ${{ env.CONDA_ENV_FILE }}
+          init-shell: bash
+          create-args: >-
+            python=${{matrix.python-version}}
 
       - name: Execute Notebook and send Tweet
         env:
